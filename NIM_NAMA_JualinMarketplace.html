@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Laporan UTS Project-Based - Jualin Marketplace</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            margin: 40px;
+            color: #202824;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #16A36A;
+            text-align: center;
+            font-size: 26pt;
+            margin-bottom: 5px;
+        }
+        .tagline {
+            text-align: center;
+            font-size: 14pt;
+            color: #7A8580;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .header-box {
+            border: 2px solid #16A36A;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #DDF5E8;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #CBD5E1;
+            padding: 10px 12px;
+            text-align: left;
+            font-size: 11pt;
+        }
+        th {
+            background-color: #16A36A;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #F8FAFC;
+        }
+        .section-card {
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .screen-title {
+            color: #16A36A;
+            font-size: 16pt;
+            font-weight: bold;
+            margin-top: 0;
+            border-bottom: 2px solid #DDF5E8;
+            padding-bottom: 5px;
+        }
+        .code-file {
+            background-color: #F1F5F9;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            font-weight: bold;
+            color: #0F172A;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .footage-box {
+            border: 2px dashed #94A3B8;
+            background-color: #F8FAFC;
+            padding: 30px;
+            text-align: center;
+            color: #64748B;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .badge {
+            background-color: #16A36A;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>LAPORAN UTS PROJECT-BASED</h1>
+    <div class="tagline">Aplikasi Android: Jualin - Marketplace ("Barang Bekas, Harga Pas!")</div>
+
+    <div class="header-box">
+        <strong>Nama Aplikasi:</strong> Jualin Marketplace<br>
+        <strong>NIM / Nama:</strong> [Isi NIM & Nama Anda di sini]<br>
+        <strong>Teknologi:</strong> Kotlin, Jetpack Compose, Material 3, Navigation Compose, SharedPreferences<br>
+        <strong>Status Build:</strong> BUILD SUCCESSFUL (0 Errors)
+    </div>
+
+    <h2>1. Tabel Pemenuhan Ketentuan UTS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 8%;">No</th>
+                <th style="width: 35%;">Ketentuan Soal UTS</th>
+                <th style="width: 57%;">Status & Bukti Pemenuhan pada Aplikasi Jualin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1a</strong></td>
+                <td>Susunan UI Rapi (Column, Row, Box) & Komponen UI Dasar</td>
+                <td><span class="badge">TERPENUHI</span> Disusun rapi dengan Column, Row, Box, LazyVerticalGrid, Text, OutlinedTextField, Button.</td>
+            </tr>
+            <tr>
+                <td><strong>1b</strong></td>
+                <td>Menampilkan Aset Gambar (Image) dari Drawable</td>
+                <td><span class="badge">TERPENUHI</span> Menggunakan aset drawable serta Coil AsyncImage untuk foto barang & profil.</td>
+            </tr>
+            <tr>
+                <td><strong>1c</strong></td>
+                <td>Minimal 2 Layar & Pengiriman Data Antar Layar</td>
+                <td><span class="badge">TERPENUHI</span> Memiliki 14 Layar Utama terintegrasi Navigation Compose / Intent dengan pengiriman argumen data.</td>
+            </tr>
+            <tr>
+                <td><strong>1d</strong></td>
+                <td>Client-Side Validation, Defensive Programming, Reactive UI</td>
+                <td><span class="badge">TERPENUHI</span> Validasi form non-kosong, format email, no. rekening, handling rotasi layar, dan UI Reaktif via StateFlow.</td>
+            </tr>
+            <tr>
+                <td><strong>1e</strong></td>
+                <td>Operasi CRUD (Create, Read, Update, Delete)</td>
+                <td><span class="badge">TERPENUHI</span> Create (Upload/Register/Chat/Bayar), Read (Beranda/Detail/Riwayat), Update (Edit Profil/Favorit), Delete (Hapus Iklan).</td>
+            </tr>
+            <tr>
+                <td><strong>1f</strong></td>
+                <td>Penyimpanan Database Lokal Aplikasi</td>
+                <td><span class="badge">TERPENUHI</span> Tersimpan persisten di SharedPreferences (JSON Deserialization) & memori lokal privat HP.</td>
+            </tr>
+            <tr>
+                <td><strong>1g</strong></td>
+                <td>Aplikasi Dapat Dijalankan</td>
+                <td><span class="badge">TERPENUHI</span> Aplikasi BUILD SUCCESSFUL dan dapat dijalankan di emulator/HP Android fisik.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Dokumentasi Footage Screenshot & Alur Sistem Per File Source Code</h2>
+
+    <div class="section-card">
+        <div class="screen-title">1. Splash Screen & Branding Aplikasi</div>
+        <div class="code-file">📄 File Source Code: SplashScreen.kt (ui/screens/splash/SplashScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Menampilkan logo Jualin Marketplace, tagline 'Barang Bekas, Harga Pas!', dan animasi scale/fade otomatis berpindah ke halaman Login/Beranda.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 1: Tampilan Splash Screen dengan animasi logo dan tagline.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">2. Halaman Login & Autentikasi</div>
+        <div class="code-file">📄 File Source Code: LoginScreen.kt (ui/screens/auth/LoginScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Form autentikasi masuk dengan Client-Side Validation (email/username non-kosong & password minimal 4 karakter), serta tombol Masuk Cepat Akun Demo.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 2: Tampilan Form Login, pesan validasi error, dan tombol Akun Demo.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">3. Halaman Register & Pendaftaran Akun</div>
+        <div class="code-file">📄 File Source Code: RegisterScreen.kt (ui/screens/auth/RegisterScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Form pendaftaran akun baru (Nama Lengkap, Email, Password, Konfirmasi Password) dengan Client-Side Validation format email & kesesuaian password.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 3: Tampilan Form Register dan pesan konfirmasi pembuatan akun.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">4. Halaman Beranda / Homepage Marketplace</div>
+        <div class="code-file">📄 File Source Code: HomeScreen.kt & ProductCard.kt (ui/screens/home/HomeScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Beranda marketplace lengkap dengan header sapaan, pencarian produk real-time, lonceng notifikasi, promo banner carousel, 8 chip kategori, tab filter, dan grid 2 kolom produk bekas.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 4: Tampilan Beranda, pencarian produk, banner promo, dan grid barang bekas.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">5. Halaman Detail Produk</div>
+        <div class="code-file">📄 File Source Code: ProductDetailScreen.kt (ui/screens/detail/ProductDetailScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Menampilkan gambar produk ukuran besar, harga Rupiah, badge kondisi barang, lokasi, deskripsi lengkap, kartu penjual terverifikasi, serta tombol Chat & Beli Sekarang.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 5: Tampilan Detail Produk, informasi seller 4.9★, dan bottom action bar.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">6. Halaman Pembayaran - Transfer Bank</div>
+        <div class="code-file">📄 File Source Code: CheckoutScreen.kt (Bank Transfer) (ui/screens/checkout/CheckoutScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Pilihan bank tujuan (BCA, Mandiri, BNI, BRI, SeaBank, Bank Jago, Danamon) dilengkapi nomor Virtual Account, tombol Salin, serta kolom wajib diisi No. Rekening Pengirim.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 6: Tampilan Metode Pembayaran Transfer Bank BCA/Mandiri dengan Nomor VA.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">7. Halaman Pembayaran - E-Wallet & QRIS 30 Menit</div>
+        <div class="code-file">📄 File Source Code: CheckoutScreen.kt (E-Wallet & QRIS) (ui/screens/checkout/CheckoutScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Pilihan E-Wallet (GoPay, OVO, DANA, ShopeePay), tampilan Barcode QRIS Resmi Merchant Jualin, serta live countdown timer batas waktu 30 menit.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 7: Tampilan Barcode QRIS, Tombol Simpan QRIS, dan Timer 30 Menit.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">8. Struk Invoice Hasil Transaksi Lunas</div>
+        <div class="code-file">📄 File Source Code: CheckoutScreen.kt (Invoice Dialog) (ui/screens/checkout/CheckoutScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Struk Invoice resmi (INV/JUALIN/YYYYMMDD/XXXXX) memuat waktu, status LUNAS, rincian barang, metode pembayaran, nomor rekening pengirim, dan total dibayar.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 8: Tampilan Struk Invoice Hasil Transaksi Lunas dengan Rincian Pembayaran.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">9. Halaman Jual Barang Bekas (CRUD Create)</div>
+        <div class="code-file">📄 File Source Code: SellProductScreen.kt (ui/screens/sell/SellProductScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Form pasang iklan baru dengan pemilih foto dari galeri HP (disalin ke memori privat lokal file://), input nama, kategori, harga, kondisi, lokasi, dan deskripsi.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 9: Tampilan Form Pasang Iklan, preview foto galeri, dan konfirmasi iklan tayang.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">10. Halaman Favorit (CRUD Update)</div>
+        <div class="code-file">📄 File Source Code: FavoriteScreen.kt (ui/screens/favorite/FavoriteScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Daftar barang bekas yang disukai pengguna. Menggunakan EmptyStateView jika belum ada produk favorit dan tombol cari barang.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 10: Tampilan Halaman Favorit produk disukai dan Empty State View.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">11. Halaman Chat & Ruang Percakapan Realtime</div>
+        <div class="code-file">📄 File Source Code: ChatDetailScreen.kt (ui/screens/chat/ChatDetailScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Ruang obrolan dengan penjual. Pengiriman pesan dapat dilakukan via tombol Kirim atau Send keyboard HP, dilanjutkan simulasi balasan otomatis dari penjual.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 11: Tampilan Ruang Chat dengan bubble pesan terkirim dan auto-reply penjual.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">12. Halaman Profil & Ubah Foto Profil</div>
+        <div class="code-file">📄 File Source Code: ProfileScreen.kt & EditProfileScreen.kt (ui/screens/profile/EditProfileScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Profil utama dan form edit profil. Pengguna dapat mengubah foto profil dari galeri HP, nama, email, nomor HP, lokasi, dan bio.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 12: Tampilan Profil Utama, Edit Foto Profil dengan Ikon Kamera, dan Ubah Bio.</span>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="screen-title">13. Halaman Barang Saya (CRUD Delete) & Riwayat Transaksi</div>
+        <div class="code-file">📄 File Source Code: MyProductsScreen.kt & TransactionHistoryScreen.kt (ui/screens/profile/MyProductsScreen.kt)</div>
+        <p><strong>Deskripsi Alur Sistem:</strong> Menampilkan barang jualan pengguna dengan tombol hapus iklan (CRUD Delete) serta riwayat transaksi pembelian lunas.</p>
+        <div class="footage-box">
+            📸 [TEMPELKAN SCREENSHOT UTAMA DI SINI]<br>
+            <span style="font-size: 10pt; font-weight: normal; color: #475569;">Footage 13: Tampilan Barang Saya dengan Tombol Hapus Iklan & Riwayat Transaksi.</span>
+        </div>
+    </div>
+
+    <h2>3. Panduan Upload Source Code ke GitHub (Publik)</h2>
+    <div class="section-card">
+        <p><strong>Langkah Upload via Android Studio (Paling Mudah):</strong></p>
+        <ol>
+            <li>Buka project Jualinmarketplace di Android Studio.</li>
+            <li>Klik menu <strong>VCS</strong> atau <strong>Git</strong> &rarr; Pilih <strong>Share Project on GitHub</strong>.</li>
+            <li>Masukkan nama repository: <code>Jualin-Marketplace</code>.</li>
+            <li>Pastikan opsi <strong>Make Private TIDAK dicentang</strong> agar repository bersifat <strong>Public</strong>.</li>
+            <li>Klik <strong>Share / Push</strong>. Seluruh kode akan otomatis terunggah ke GitHub.</li>
+        </ol>
+    </div>
+
+</body>
+</html>
